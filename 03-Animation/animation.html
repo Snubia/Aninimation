@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UFT-8">
+    <title>Animation</title>
+    <script src="js/jquery.js"></script>
+
+</header>
+
+<script>
+    $("document").ready(function () {
+        $("#grow").click(function () {
+            $("#box").animate({
+                width: "500px"
+            }, 1000)
+        });
+        $("#move").click(function () {
+            $("#box").animate({
+                marginLeft: "100px"
+            }, 1000)
+        });
+        $("#increase").click(function () {
+            $("#box").animate({
+                fontSize: "30px"
+            }, 1000)
+        });
+        $("#doThings").click(function () {
+            $("#box").animate({
+                width: "1000px",
+                marginLeft: "200px",
+                fontSize: "50px"
+            }, 1000)
+        });
+
+    })
+</script>
+<style>
+    #box {
+        width: 200px;
+        height: 200px;
+        background: pink;
+        margin-top: 10%;
+        position: absolute;
+    }
+
+    #box p {
+        text-transform: uppercase;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <button><a id="grow" href="#"> Grow</a></button>
+    <button><a id="move" href="#"> Move</a></button>
+    <button><a id="increase" href="#"> Increase font Size</a></button>
+    <button><a id="doThings" href="#"> Do Many things</a></button>
+    <div id="box">
+        <p>Well hello there !!</p>
+    </div>
+</body>
+
+</html>
