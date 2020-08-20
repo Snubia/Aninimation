@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UFT-8">
+    <title>replacing</title>
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function () { // $("p") = extracting something // $("<p>") = creating something
+
+            var newPara = $("<p>");
+            newPara.append("<i> Hello, we just created and appended this to our paragraph</i>");
+
+            $("#box").html(newPara); // pushing this to our div in html bellow
+
+        });
+    </script>
+</header>
+
+
+<body>
+    <div id="box">
+
+    </div>
+</body>
+
+</html>

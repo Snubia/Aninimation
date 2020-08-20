@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UFT-8">
+    <title>Event</title>
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function () {
+            $("#box").on("click", whenMouseIsClicked);
+
+            $("#box").on("mouseleave", whenMouseleaves);
+
+            function whenMouseIsClicked() {
+                $("#box").html("<h4> you clicked on me yay!!! </h4>")
+            }
+
+            function whenMouseleaves() {
+                $("#box").html("<h4> Where are you going to my friend?? </h4>")
+            }
+
+        });
+    </script>
+    <style>
+        #box {
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+    </style>
+</header>
+
+
+<body>
+    <div id="box">
+
+    </div>
+</body>
+
+</html>
