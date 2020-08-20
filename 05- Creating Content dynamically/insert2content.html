@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UFT-8">
+    <title>Insert Content</title>
+    <script src="../js/jquery.js"></script>
+
+</header>
+
+<script>
+    $("document").ready(function () {
+        $("#appendTo").click(function () {
+            $("p:first").appendTo("p:last");
+        });
+        $("#prependTo").click(function () {
+            $("p:last").prependTo("p:first");
+        });
+        $("#insert").click(function () { // insert starts after each paragraphs
+            $("p").after("**");
+        });
+        // $("#insertAfter").click(function () {
+        //     $("<p>This is a new paragraph </p>").insertAfter("p:first");
+        // });
+        $("#insertAfter").click(function () {
+            $("<p>This paragraphs were created to text the inserAfter method. If you can see this after all the originals paragraphs, it worked.</p>")
+                .insertAfter("p");
+        });
+    });
+</script>
+<style>
+
+</style>
+
+<body>
+    <button> <a id="appendTo" href="#">Append</a> </button>
+    <button> <a id="prependTo" href="#">Prepend</a> </button>
+    <button> <a id="insert" href="#">Insert</a> </button>
+    <button> <a id="insertAfter" href="#">Insert After</a> </button>
+
+
+    <div id="box">
+        <p> C'était un jeune marin
+            Qui revenait de guerre
+            qui revenait de guerre avec son régiment
+            pour aller voir Adèle, Adèle sa bien aimée.
+            pour aller voir Adèle, Adèle sa bien aimée.
+
+            Le jeune marin s'en va
+            trouver son capitaine
+            Bonjour mon capitaine
+            donnez -moi un congé
+            pour aller voir Adèle, Adèle ma bien aimée
+            pour aller voir Adèle, Adèle ma bien aimée
+
+            Le capitaine répond:
+            entre dans ta chambrette, porte ta culotte blanche et ta ceinture dorée
+            pour aller voir Adèle, Adèle ta bien aimée.
+            pour aller voir Adèle, Adèle ta bien aimée </p>
+
+
+        <p> Le jeune marin s'en va chez les parents d'Adèle
+            Bonjour ,chers père et mère ainsi que frères et soeurs
+            sans oublier Adèle ,Adèle ma bien aimée.
+            sans oublier Adèle ,Adèle ma bien aimée
+
+
+            Le père [lui ] répond, les yeux remplis de larmes :
+            Adèle , Adèle, Adèle, Adèle n'est plus ici
+            Son corps est dans sa tombe et son âme au paradis
+            Son corps est dans sa tombe et son âme au paradis
+
+
+            le jeune marin s'en va
+            sur le tombeau d'Adèle>
+            Adèle Adèle ,Adèle
+            Adèle ,réponds -moi
+            c'est ton ami fidèle qui vient ici pour toi
+            c'est ton ami fidèle qui vient ici pour toi </p>
+
+
+        <p> Un ange lui repond avec la voix d'Adèle:
+            Tu auras une autre à l'âge de 20 ans
+            qui sera ton épouse [à ta] sortie du régiment
+            qui sera ton épouse [à ta] sortie du régiment
+
+
+            Le jeune marin s'en va trouver son capitaine
+            bonjour mon capitaine, me voici de retour
+            puisqu' Adèle est morte je m'engage pour toujours
+            puisqu' Adèle est morte je m'engage pour toujours
+
+
+            Mes parents, laissez-moi jouer ma vie
+            Mes parents, laissez-moi jouer ma vie
+            Quand la mort viendra, viendra, viendra
+            Quand la mort viendra je vais mourir o </p>
+
+        <p> C'était un jeune marin
+            Qui revenait de guerre
+            qui revenait de guerre avec son régiment
+            pour aller voir Adèle, Adèle sa bien aimée.
+            pour aller voir Adèle, Adèle sa bien aimée.
+
+            Le jeune marin s'en va
+            trouver son capitaine
+            Bonjour mon capitaine
+            donnez -moi un congé
+            pour aller voir Adèle, Adèle ma bien aimée
+            pour aller voir Adèle, Adèle ma bien aimée
+
+            Le capitaine répond:
+            entre dans ta chambrette, porte ta culotte blanche et ta ceinture dorée
+            pour aller voir Adèle, Adèle ta bien aimée.
+            pour aller voir Adèle, Adèle ta bien aimée </p>
+
+        <p> Le jeune marin s'en va chez les parents d'Adèle
+            Bonjour ,chers père et mère ainsi que frères et soeurs
+            sans oublier Adèle ,Adèle ma bien aimée.
+            sans oublier Adèle ,Adèle ma bien aimée
+
+
+            Le père [lui ] répond, les yeux remplis de larmes :
+            Adèle , Adèle, Adèle, Adèle n'est plus ici
+            Son corps est dans sa tombe et son âme au paradis
+            Son corps est dans sa tombe et son âme au paradis
+
+
+            le jeune marin s'en va
+            sur le tombeau d'Adèle>
+            Adèle Adèle ,Adèle
+            Adèle ,réponds -moi
+            c'est ton ami fidèle qui vient ici pour toi
+            c'est ton ami fidèle qui vient ici pour toi </p>
+
+
+    </div>
+
+</body>
+
+</html>
